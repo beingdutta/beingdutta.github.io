@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritra Dutta | IIT-KGP</title>
+    <link rel="icon" href="assets/site-icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    
+    <script src="scripts/index.js"></script>
+    
+</head>
+<body class="bg-background text-slate-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold tracking-tight text-slate-900">
+                        Home
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#news" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors">News</a>
+                    <a href="#publications" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors">Publications</a>
+                    <a href="#experience" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors">Experience</a>
+                    <a href="mailto:aritradutta18@gmail.com" class="px-4 py-2 rounded-md bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#news" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">News</a>
+                <a href="#publications" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Publications</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+
+            <!-- Left Pane: Profile (Sticky on Desktop) -->
+            <aside class="lg:col-span-4 xl:col-span-3">
+                <div class="lg:sticky lg:top-24 space-y-6">
+                    <!-- Profile Card -->
+                    <div class="bg-surface rounded-2xl shadow-md p-6 border border-slate-100 text-center relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-20 bg-cover bg-center" style="background-image: url('assets/cover.jpg');">
+                            <!-- Overlay to darken the image slightly for better text visibility if needed -->
+                            <div class="absolute inset-0 bg-black opacity-20"></div>
+                        </div>
+                        
+                        
+                        <div class="relative">
+                            <img src="assets/aritra.jpg" 
+                                 alt="Profile" 
+                                 class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg object-cover bg-slate-100">
+                            <div class="mt-4">
+                                <h1 class="text-2xl font-bold text-slate-900">Aritra Dutta</h1>
+                                <p class="text-primary font-medium text-sm mt-1">MS Computer Science @ IIT Kharagpur, Member of <a href="https://adityasomak.github.io/research/" target="_blank" rel="noopener noreferrer" class="underline">TR<sup>^</sup>ALL Lab</a></p>
+                            </div>
+                            
+                            <p class="text-slate-600 text-sm mt-4 leading-relaxed">
+                                Researching efficient Compression techniques in Vision & Video Language Models and their impact on reasoning. Passionate about Mixture-of-Experts, Recursive Models, Low-Resource AI, Reasoning in AI and interpretability.
+                            </p>
+
+                            <!-- Social Links -->
+                            <div class="flex justify-center space-x-4 mt-6">
+                                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 text-slate-600 hover:bg-primary hover:text-white transition-all shadow-sm border border-slate-200" title="Google Scholar">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                                <a href="https://github.com/beingdutta" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 text-slate-600 hover:bg-gray-900 hover:text-white transition-all shadow-sm border border-slate-200" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://x.com/beingdutta_" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 text-slate-600 hover:bg-blue-600 hover:text-white transition-all shadow-sm border border-slate-200" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/aritra-dutta-bb988a190/" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 text-slate-600 hover:bg-blue-700 hover:text-white transition-all shadow-sm border border-slate-200" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="mt-8 pt-6 border-t border-slate-100">
+                                <a href="https://drive.google.com/file/d/19UPcRSCQ869loX3IIJ-aOt9hs3ugG_5e/view?usp=drive_link" class="flex items-center justify-center w-full px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors shadow-lg shadow-slate-300/50 font-medium">
+                                    <i class="fas fa-file-alt mr-2"></i> Download CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills/Interests (Optional mini-widget) -->
+                    <div class="bg-surface rounded-2xl shadow-sm p-6 border border-slate-100">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Focus Areas</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-medium border border-blue-100">Reasoning</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-50 text-purple-600 text-xs font-medium border border-purple-100">Reinforcement Learning</span>
+                            <span class="px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-medium border border-green-100">Mixture of Experts</span>
+                            <span class="px-3 py-1 rounded-full bg-orange-50 text-orange-600 text-xs font-medium border border-orange-100">Vision Language Models</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Pane: Content -->
+            <main class="lg:col-span-8 xl:col-span-9 space-y-10">
+
+                <!-- News Section -->
+                <section id="news" class="animate-fade-in-up">
+                    <div class="flex items-center mb-6">
+                        <div class="h-6 w-1 bg-primary rounded-full mr-3"></div>
+                        <h2 class="text-xl font-bold text-slate-900">Recent News</h2>
+                    </div>
+                    
+                    <div class="bg-surface rounded-2xl shadow-md border border-slate-100 divide-y divide-slate-100">
+                        <!-- News Item -->
+                        <div class="p-5 hover:bg-slate-50 transition-colors flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
+                            <span class="shrink-0 inline-block px-2 py-1 text-xs font-bold text-white bg-primary rounded">Nov 2024</span>
+                            <p class="text-sm text-slate-700">
+                                Selected for Participation in <span class="font-semibold text-slate-900">ACM Winter School on EdgeAI</span> 2025 <span class="font-medium text-blue-600">IISC, Bangalore</span>.
+                            </p>
+                        </div>
+                        <!-- News Item -->
+                        <div class="p-5 hover:bg-slate-50 transition-colors flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
+                            <span class="shrink-0 inline-block px-2 py-1 text-xs font-bold text-slate-500 bg-slate-200 rounded">Sep 2024</span>
+                            <p class="text-sm text-slate-700">
+                                C<sup>3</sup>VLM: Compute-Efficient & Compressed Small VLMs for Commonsense VQA Proposal Selected For <span class="font-semibold text-slate-900">Poster Presentation</span> at IndoML Graduate Forum 2025.
+                            </p>
+                        </div>
+                        <!-- News Item -->
+                        <div class="p-5 hover:bg-slate-50 transition-colors flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
+                            <span class="shrink-0 inline-block px-2 py-1 text-xs font-bold text-slate-500 bg-slate-200 rounded">Aug 2024</span>
+                            <p class="text-sm text-slate-700">
+                                NLKI-Lightweight-Natural-Language-Knowledge-Integration-Framework Paper Accepted at <span class="font-semibold text-slate-900">EMNLP Findings 2025</span> Suzhou, China.
+                            </p>
+                        </div>
+
+                        <!-- News Item -->
+                        <div class="p-5 hover:bg-slate-50 transition-colors flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
+                            <span class="shrink-0 inline-block px-2 py-1 text-xs font-bold text-slate-500 bg-slate-200 rounded">July 2024</span>
+                            <p class="text-sm text-slate-700">
+                                Delivered a talk and Hands on Text Analytics and Processing for the <span class="font-semibold text-slate-900">AICTE QIP PG Certificate course</span> at IIT-Kharagpur.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publications Section -->
+                <section id="publications">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center">
+                            <div class="h-6 w-1 bg-primary rounded-full mr-3"></div>
+                            <h2 class="text-xl font-bold text-slate-900">Selected Publications</h2>
+                        </div>
+                        <a href="#" class="text-sm text-primary font-medium hover:underline">View Google Scholar &rarr;</a>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Paper 1 -->
+                        <div class="bg-surface rounded-xl shadow-md border border-slate-100 p-6 hover-lift">
+                            <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                                <div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-tight">
+                                        <a href="#" class="hover:text-primary transition-colors">C<sup>3</sup>VLM: Compute-Efficient & Compressed Small VLMs for Commonsense VQA Proposal</a>
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mt-1">
+                                        <span class="font-semibold text-slate-900">Aritra Dutta</span>
+                                    </p>
+                                    <div class="flex flex-wrap items-center gap-2 mt-3">
+                                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-700 border border-blue-200">IndoML Graduate Forum 2025</span>
+                                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-700 border border-amber-100">Proposal</span>
+                                    </div>
+                                    <p class="text-slate-500 text-sm mt-3 leading-relaxed line-clamp-2">
+                                        We propose two complementary directions to achieve compact, efficient, and dependable reasoning in Vision-Language Models (VLMs) under low-compute/low-latency constraints...
+                                    </p>
+                                </div>
+                                <div class="shrink-0 flex flex-row md:flex-col gap-2">
+                                    <a href="https://drive.google.com/file/d/1ZTZLv-rZVVaHQDPP-vw2mDpIeO0RGNcv/view?usp=sharing" class="inline-flex items-center justify-center px-3 py-1.5 rounded border border-slate-200 text-xs font-medium text-slate-600 hover:bg-slate-50 hover:text-primary transition-colors">
+                                        <i class="far fa-file-pdf mr-2"></i> PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paper 2 -->
+                        <div class="bg-surface rounded-xl shadow-md border border-slate-100 p-6 hover-lift">
+                            <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                                <div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-tight">
+                                        <a href="#" class="hover:text-primary transition-colors">NLKI: A Lightweight Natural Language Knowledge Integration Framework for Improving Small VLMs in Commonsense VQA</a>
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mt-1">
+                                        Aritra Dutta, Swapnanil Mukherjee, Deepanway Ghosal, Somak Aditya
+                                    </p>
+                                    <div class="flex flex-wrap items-center gap-2 mt-3">
+                                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-700 border border-blue-200">EMNLP 2025</span>
+                                    </div>
+                                    <p class="text-slate-500 text-sm mt-3 leading-relaxed line-clamp-2">
+                                        A Noise Robust Knowledge Integration Framework for Efficient Small Vision Language Models.
+                                    </p>
+                                </div>
+                                <div class="shrink-0 flex flex-row md:flex-col gap-2">
+                                    <a href="https://aclanthology.org/2025.findings-emnlp.557/" class="inline-flex items-center justify-center px-3 py-1.5 rounded border border-slate-200 text-xs font-medium text-slate-600 hover:bg-slate-50 hover:text-primary transition-colors">
+                                        <i class="far fa-file-pdf mr-2"></i> PDF
+                                    </a>
+                                    <a href="https://github.com/beingdutta/NLKI-Lightweight-Natural-Language-Knowledge-Integration-Framework" class="inline-flex items-center justify-center px-3 py-1.5 rounded border border-slate-200 text-xs font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Teaching Assistance Experience Section -->
+                <section id="teaching">
+                    <div class="flex items-center mb-6">
+                        <div class="h-6 w-1 bg-primary rounded-full mr-3"></div>
+                        <h2 class="text-xl font-bold text-slate-900">Teaching Assistance Experience</h2>
+                    </div>
+
+                    <div class="bg-surface rounded-2xl shadow-md border border-slate-100 divide-y divide-slate-100">
+                        <!-- TA Item -->
+                        <div class="p-5 hover:bg-slate-50 transition-colors">
+                            <p class="text-sm text-slate-700 font-medium">Programming and Data Structure Lab (CS19003)</p>
+                        </div>
+                        <!-- TA Item -->
+                        <div class="p-5 hover:bg-slate-50 transition-colors">
+                            <p class="text-sm text-slate-700 font-medium">Machine Learning (CS60050)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Timeline Section -->
+                <section id="experience">
+                    <div class="flex items-center mb-6">
+                        <div class="h-6 w-1 bg-primary rounded-full mr-3"></div>
+                        <h2 class="text-xl font-bold text-slate-900">Experience & Education</h2>
+                    </div>
+
+                    <div class="relative pl-8 border-l-2 border-slate-200 space-y-10 my-4">
+                        
+                        <!-- Timeline Item -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary shadow-sm"></div>
+                            <div>
+                                <span class="text-xs font-bold text-primary uppercase tracking-wider">2024 - Present</span>
+                                <h3 class="text-lg font-bold text-slate-900">MS in Computer Science</h3>
+                                <div class="text-sm font-medium text-slate-600 mb-2">Indian Institute of Technology (IIT), Kharagpur</div>
+                                <p class="text-sm text-slate-500 max-w-2xl">
+                                    Advised by Prof. Somak Aditya. Focused on compression and reasoning in Small Vision Language Models.
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- Timeline Item -->
+                         <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-slate-300 shadow-sm"></div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2023-2024</span>
+                                <h3 class="text-lg font-bold text-slate-900">Junior Research Fellow</h3>
+                                <div class="text-sm font-medium text-slate-600 mb-2">Indian Institute of Technology (IIT), Kharagpur</div>
+                                <p class="text-sm text-slate-500 max-w-2xl">
+                                    Researched multi-modal reasoning capabilities of Encoder only Architectures. Framed a new strategy for noise robustness in Visual Question Answering (VQA).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-slate-300 shadow-sm"></div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2020-2022</span>
+                                <h3 class="text-lg font-bold text-slate-900">Asst. System Engineer</h3>
+                                <div class="text-sm font-medium text-slate-600 mb-2">Infospace, Kolkata</div>
+                                <p class="text-sm text-slate-500 max-w-2xl">
+                                    Contributed to the backend and performance testing of Health & Motor Insurance Portal.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item -->
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-slate-300 shadow-sm"></div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2016 - 2020</span>
+                                <h3 class="text-lg font-bold text-slate-900">B.Tech in Computer Science</h3>
+                                <div class="text-sm font-medium text-slate-600 mb-2">University of Engineering & Management, Kolkata</div>
+                                <p class="text-sm text-slate-500 max-w-2xl">
+                                    GPA: 9.14/10. Undergraduate thesis on Object Detection and Recognition.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Footer (Right Pane Only) -->
+                <footer class="pt-10 border-t border-slate-200 text-center sm:text-left">
+                    <p class="text-slate-400 text-sm">
+                        &copy; 2025 Aritra Dutta. Built with Tailwind CSS.
+                    </p>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    
+</body>
+</html>
